@@ -1,4 +1,6 @@
 ## PocketResearch: Multi-Agent AI Research Assistant
+<img width="1908" height="960" alt="Screenshot 2026-04-14 234927" src="https://github.com/user-attachments/assets/a7b1d3c2-8ada-4b50-ade3-c31790152bec" />
+
 
 PocketResearch is a Python project that runs a multi-agent research pipeline using LangChain + Gemini.
 
