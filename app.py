@@ -24,8 +24,8 @@ html, body, [class*="css"] {
 .stApp {
     background: #0a0a0f;
     background-image:
-        radial-gradient(ellipse 80% 50% at 20% -10%, rgba(255,140,50,0.12) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 40% at 80% 110%, rgba(255,80,30,0.08) 0%, transparent 55%);
+    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(180,180,190,0.14) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 110%, rgba(140,140,155,0.10) 0%, transparent 55%);
 }
 
 /* ── Hide default streamlit chrome ── */
@@ -44,7 +44,7 @@ html, body, [class*="css"] {
     font-weight: 500;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: #ff8c32;
+    color: #b4b4bf;
     margin-bottom: 1rem;
     opacity: 0.9;
 }
@@ -58,7 +58,7 @@ html, body, [class*="css"] {
     margin: 0 0 1rem;
 }
 .hero h1 span {
-    color: #ff8c32;
+    color: #b4b4bf;
 }
 .hero-sub {
     font-size: 1.05rem;
@@ -72,14 +72,14 @@ html, body, [class*="css"] {
 /* ── Divider ── */
 .divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255,140,50,0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(170,170,180,0.35), transparent);
     margin: 2rem 0;
 }
 
 /* ── Input card ── */
 .input-card {
     background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,140,50,0.15);
+    border: 1px solid rgba(175,175,185,0.2);
     border-radius: 16px;
     padding: 2rem 2.5rem;
     margin-bottom: 2rem;
@@ -89,7 +89,7 @@ html, body, [class*="css"] {
 /* ── Streamlit input overrides ── */
 .stTextInput > div > div > input {
     background: rgba(255,255,255,0.05) !important;
-    border: 1px solid rgba(255,140,50,0.25) !important;
+    border: 1px solid rgba(170,170,180,0.3) !important;
     border-radius: 10px !important;
     color: #f0ebe0 !important;
     font-family: 'DM Sans', sans-serif !important;
@@ -98,22 +98,22 @@ html, body, [class*="css"] {
     transition: border-color 0.2s, box-shadow 0.2s !important;
 }
 .stTextInput > div > div > input:focus {
-    border-color: #ff8c32 !important;
-    box-shadow: 0 0 0 3px rgba(255,140,50,0.12) !important;
+    border-color: #c2c2ce !important;
+    box-shadow: 0 0 0 3px rgba(190,190,200,0.16) !important;
 }
 .stTextInput > label {
     font-family: 'DM Mono', monospace !important;
     font-size: 0.72rem !important;
     letter-spacing: 0.15em !important;
     text-transform: uppercase !important;
-    color: #ff8c32 !important;
+    color: #b8b8c3 !important;
     font-weight: 500 !important;
 }
 
 /* ── Button ── */
 .stButton > button {
-    background: linear-gradient(135deg, #ff8c32 0%, #ff5a1a 100%) !important;
-    color: #0a0a0f !important;
+    background: linear-gradient(135deg, #c7c7d2 0%, #9c9cab 100%) !important;
+    color: #111117 !important;
     font-family: 'Syne', sans-serif !important;
     font-weight: 700 !important;
     font-size: 0.95rem !important;
@@ -123,12 +123,12 @@ html, body, [class*="css"] {
     padding: 0.7rem 2.2rem !important;
     cursor: pointer !important;
     transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s !important;
-    box-shadow: 0 4px 20px rgba(255,140,50,0.3) !important;
+    box-shadow: 0 4px 20px rgba(160,160,175,0.35) !important;
     width: 100%;
 }
 .stButton > button:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 8px 28px rgba(255,140,50,0.4) !important;
+    box-shadow: 0 8px 28px rgba(165,165,180,0.42) !important;
     opacity: 0.95 !important;
 }
 .stButton > button:active {
@@ -147,12 +147,12 @@ html, body, [class*="css"] {
     transition: border-color 0.3s;
 }
 .step-card.active {
-    border-color: rgba(255,140,50,0.4);
-    background: rgba(255,140,50,0.04);
+    border-color: rgba(185,185,195,0.45);
+    background: rgba(175,175,190,0.08);
 }
 .step-card.done {
-    border-color: rgba(80,200,120,0.3);
-    background: rgba(80,200,120,0.03);
+    border-color: rgba(165,165,178,0.45);
+    background: rgba(160,160,172,0.09);
 }
 .step-card::before {
     content: '';
@@ -163,8 +163,8 @@ html, body, [class*="css"] {
     background: rgba(255,255,255,0.05);
     transition: background 0.3s;
 }
-.step-card.active::before { background: #ff8c32; }
-.step-card.done::before   { background: #50c878; }
+.step-card.active::before { background: #bcbcc8; }
+.step-card.done::before   { background: #a8a8b7; }
 
 .step-header {
     display: flex;
@@ -177,7 +177,7 @@ html, body, [class*="css"] {
     font-size: 0.68rem;
     font-weight: 500;
     letter-spacing: 0.15em;
-    color: #ff8c32;
+    color: #bebec9;
     opacity: 0.7;
 }
 .step-title {
@@ -193,8 +193,8 @@ html, body, [class*="css"] {
     letter-spacing: 0.1em;
 }
 .status-waiting  { color: #555; }
-.status-running  { color: #ff8c32; }
-.status-done     { color: #50c878; }
+.status-running  { color: #d4d4de; }
+.status-done     { color: #b8b8c4; }
 
 /* ── Result panels ── */
 .result-panel {
@@ -211,10 +211,10 @@ html, body, [class*="css"] {
     font-weight: 500;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #ff8c32;
+    color: #bdbdca;
     margin-bottom: 1rem;
     padding-bottom: 0.7rem;
-    border-bottom: 1px solid rgba(255,140,50,0.15);
+    border-bottom: 1px solid rgba(170,170,180,0.2);
 }
 .result-content {
     font-size: 0.92rem;
@@ -227,17 +227,19 @@ html, body, [class*="css"] {
 /* ── Report & feedback panels ── */
 .report-panel {
     background: rgba(255,255,255,0.025);
-    border: 1px solid rgba(255,140,50,0.2);
+    border: 1px solid rgba(175,175,185,0.25);
     border-radius: 16px;
     padding: 2rem 2.5rem;
     margin-top: 1rem;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
 }
 .feedback-panel {
     background: rgba(255,255,255,0.025);
-    border: 1px solid rgba(80,200,120,0.2);
+    border: 1px solid rgba(165,165,175,0.25);
     border-radius: 16px;
     padding: 2rem 2.5rem;
     margin-top: 1rem;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
 }
 .panel-label {
     font-family: 'DM Mono', monospace;
@@ -248,16 +250,52 @@ html, body, [class*="css"] {
     padding-bottom: 0.7rem;
 }
 .panel-label.orange {
-    color: #ff8c32;
-    border-bottom: 1px solid rgba(255,140,50,0.15);
+    color: #c4c4d0;
+    border-bottom: 1px solid rgba(170,170,180,0.2);
 }
 .panel-label.green {
-    color: #50c878;
-    border-bottom: 1px solid rgba(80,200,120,0.15);
+    color: #b8b8c4;
+    border-bottom: 1px solid rgba(165,165,175,0.2);
+}
+
+.report-panel h1,
+.report-panel h2,
+.report-panel h3,
+.feedback-panel h1,
+.feedback-panel h2,
+.feedback-panel h3 {
+    font-family: 'Syne', sans-serif;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+
+.report-panel p,
+.feedback-panel p,
+.report-panel li,
+.feedback-panel li {
+    color: #ddd6cc;
+    line-height: 1.82;
+    font-size: 1.03rem;
+}
+
+.report-panel ul,
+.report-panel ol,
+.feedback-panel ul,
+.feedback-panel ol {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.results-helper {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: #7f766d;
+    margin-bottom: 0.6rem;
 }
 
 /* ── Progress text ── */
-.stSpinner > div { color: #ff8c32 !important; }
+.stSpinner > div { color: #c4c4d0 !important; }
 
 /* ── Expander ── */
 details summary {
@@ -462,47 +500,63 @@ if r:
     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
     st.markdown('<div class="section-heading">Results</div>', unsafe_allow_html=True)
 
-    # Raw outputs in expanders
-    if "search" in r:
-        with st.expander("🔍 Search Results (raw)", expanded=False):
-            st.markdown(f'<div class="result-panel"><div class="result-panel-title">Search Agent Output</div>'
-                        f'<div class="result-content">{r["search"]}</div></div>', unsafe_allow_html=True)
+    readable_mode = True
 
-    if "reader" in r:
-        with st.expander("📄 Scraped Content (raw)", expanded=False):
-            st.markdown(f'<div class="result-panel"><div class="result-panel-title">Reader Agent Output</div>'
-                        f'<div class="result-content">{r["reader"]}</div></div>', unsafe_allow_html=True)
+    # Focus reading experience by keeping long content in a narrower center column.
+    left_pad, center_col, right_pad = st.columns([1, 8, 1])
+    with center_col:
+        # Final report
+        if "writer" in r:
+            st.markdown("""
+            <div class="report-panel">
+                <div class="panel-label orange">📝 Final Research Report</div>
+            """, unsafe_allow_html=True)
+            st.markdown(r["writer"])   # render markdown natively
+            st.markdown("</div>", unsafe_allow_html=True)
 
-    # Final report
-    if "writer" in r:
-        st.markdown("""
-        <div class="report-panel">
-            <div class="panel-label orange">📝 Final Research Report</div>
-        """, unsafe_allow_html=True)
-        st.markdown(r["writer"])   # render markdown natively
-        st.markdown("</div>", unsafe_allow_html=True)
+            # Download
+            st.download_button(
+                label="⬇  Download Report (.md)",
+                data=r["writer"],
+                file_name=f"pocketresearch_report_{int(time.time())}.md",
+                mime="text/markdown",
+            )
 
-        # Download
-        st.download_button(
-            label="⬇  Download Report (.md)",
-            data=r["writer"],
-            file_name=f"pocketresearch_report_{int(time.time())}.md",
-            mime="text/markdown",
-        )
+        # Critic feedback
+        if "critic" in r:
+            st.markdown("""
+            <div class="feedback-panel">
+                <div class="panel-label green">🧐 Critic Feedback</div>
+            """, unsafe_allow_html=True)
+            st.markdown(r["critic"])
+            st.markdown("</div>", unsafe_allow_html=True)
 
-    # Critic feedback
-    if "critic" in r:
-        st.markdown("""
-        <div class="feedback-panel">
-            <div class="panel-label green">🧐 Critic Feedback</div>
-        """, unsafe_allow_html=True)
-        st.markdown(r["critic"])
-        st.markdown("</div>", unsafe_allow_html=True)
+    if readable_mode:
+        with st.expander("Show raw search output", expanded=False):
+            if "search" in r:
+                st.markdown(f'<div class="result-panel"><div class="result-panel-title">Search Agent Output</div>'
+                            f'<div class="result-content">{r["search"]}</div></div>', unsafe_allow_html=True)
+
+        with st.expander("Show raw scraped content", expanded=False):
+            if "reader" in r:
+                st.markdown(f'<div class="result-panel"><div class="result-panel-title">Reader Agent Output</div>'
+                            f'<div class="result-content">{r["reader"]}</div></div>', unsafe_allow_html=True)
+    else:
+        # Raw outputs in expanders
+        if "search" in r:
+            with st.expander("🔍 Search Results (raw)", expanded=False):
+                st.markdown(f'<div class="result-panel"><div class="result-panel-title">Search Agent Output</div>'
+                            f'<div class="result-content">{r["search"]}</div></div>', unsafe_allow_html=True)
+
+        if "reader" in r:
+            with st.expander("📄 Scraped Content (raw)", expanded=False):
+                st.markdown(f'<div class="result-panel"><div class="result-panel-title">Reader Agent Output</div>'
+                            f'<div class="result-content">{r["reader"]}</div></div>', unsafe_allow_html=True)
 
 
 # ── Footer ────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="notice">
-    PocketResearch· Powered by LangChain multi-agent pipeline · Built with Streamlit
+    PocketResearch · Powered by LangChain multi-agent pipeline · Built with Streamlit
 </div>
 """, unsafe_allow_html=True)
